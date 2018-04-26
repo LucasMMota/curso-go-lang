@@ -30,10 +30,12 @@ func main() {
 
 	fmt.Println(a, b, c, d)
 
+	// declaracao de vars e atribuicao de valor
 	var e, f bool = true, false
 
 	fmt.Println(e, f)
 
+	// declaracao reduzida de vars e atribuicao de valor
 	g, h, i := 2, false, "epa!"
 	fmt.Println(g, h, i)
 }
