@@ -22,6 +22,8 @@ func main() {
 	s3 := a2[:2]
 	fmt.Println(s3)
 
+	// slice do slice
 	s4 := s2[:1]
 	fmt.Println(s2, s4)
+
 }
