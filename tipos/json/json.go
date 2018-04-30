@@ -6,7 +6,7 @@ import (
 )
 
 type produto struct {
-	Id    int      `json:"id"`
+	ID    int      `json:"id"`
 	Nome  string   `json:"nome"`
 	Preco float64  `json:"preco"`
 	Tags  []string `json:"tags"` // slice de strings
@@ -15,14 +15,14 @@ type produto struct {
 func main() {
 	// struct to json
 	p1 := produto{
-		Id:    1,
+		ID:    1,
 		Nome:  "Notebook",
 		Preco: 1899.90,
 		Tags:  []string{"Promoção", "Eletrônico"},
 	}
 
-	p1Json, _ := json.Marshal(p1)
-	fmt.Println(string(p1Json))
+	p1Json, _ := json.Marshal(p1) // transforma o struct para json, retorna []byte
+	fmt.Println(string(p1Json))   // string([]byte) transforma em string
 
 	// json para struct
 	var p2 produto
