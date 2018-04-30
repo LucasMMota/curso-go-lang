@@ -20,7 +20,7 @@ type produto struct {
 }
 
 // implementa os metodos da interface. Deve implementar todos os metodos da inteface
-func (p pessoa) toString() string {
+func (p pessoa) toString() string { // não precisa de ponteiro pois apenas lê valores
 	return p.nome + " " + p.sobrenome
 }
 
